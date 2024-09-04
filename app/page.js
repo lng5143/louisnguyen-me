@@ -11,7 +11,9 @@ export default function Home() {
         <p>When I was 26, after a career break due to health issues, I decided to start over by learning programming. I quickly found a passion for it and haven&apos;t looked back since.</p>
         <p>I love engineering, learning new stuff, and building products.</p>
         <p>Now I work on my own projects full-time.</p>
-        <Link href="/projects"><u>Check out the projects I&apos;m working on</u></Link>
+        <div>
+          <Link href="/projects"><u>Check out the projects I&apos;m working on</u></Link>
+        </div>
       </div>
       <div className="min-w-[350px]">
         <Image className="rounded-xl" src="/main-pic-square.jpeg" alt="Louis Nguyen" width={350} height={350} />
