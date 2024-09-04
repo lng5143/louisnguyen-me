@@ -4,7 +4,7 @@ import NavItem from "./nav-item";
 
 export default function NavBar() {
     return (
-        <div className="flex items-center">
+        <div className="flex items-center gap-5">
             <Link className="flex-grow" href="/">
                 <div className="flex gap-3 items-center">
                     <Avatar>
@@ -14,6 +14,7 @@ export default function NavBar() {
                     <h1 className="text-xxl font-bold">Louis Nguyen</h1>
                 </div>
             </Link>
+            <button className="bg-blue-800 text-slate-200 rounded-md py-2 px-4 w-fit"><a href="https://buymeacoffee.com/louisng" target="_blank" rel="noopener noreferrer">Buy me a coffee</a></button>
             <div className="hover:underline">
                 <NavItem href="/projects" name="Projects" />
             </div>
