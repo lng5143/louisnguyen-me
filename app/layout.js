@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} px-32 py-16`}>
+      <body className={`${inter.className} px-32 py-16 flex flex-col gap-20`}>
         <NavBar />
         {children}
       </body>

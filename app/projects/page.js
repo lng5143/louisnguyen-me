@@ -7,12 +7,14 @@ export default function ProjectsPage() {
 
     
     return (
-        <div>
+        <div className="flex flex-col gap-10">
+            <h1 className="text-2xl">A complete list of all the projects I'm working on</h1>
             <Table>
                 <TableHeader>
                     <TableRow>
                         <TableCell>Name</TableCell>
                         <TableCell>Description</TableCell>
+                        <TableCell>Tech Stack</TableCell>
                         <TableCell>Status</TableCell>
                         <TableCell>Revenue</TableCell>
                     </TableRow>
@@ -22,6 +24,11 @@ export default function ProjectsPage() {
                         <TableRow key={project.name}>
                             <TableCell><a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a></TableCell>
                             <TableCell>{project.description}</TableCell>
+                            <TableCell>
+                                <div className="flex gap-1 flex-wrap">
+                                    {project.techStack.map((tech, ind) => <Badge variant="default" key={ind}>{tech}</Badge>)}
+                                </div>
+                            </TableCell>
                             <TableCell>
                                 {project.status === 1 ? (
                                     <Badge variant="live">Live</Badge>
