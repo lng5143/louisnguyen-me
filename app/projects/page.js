@@ -1,14 +1,13 @@
 import { Badge } from "@/components/ui/badge";
 import { Table, TableRow, TableCell, TableHeader, TableBody } from "@/components/ui/table";
 import PROJECTS from "@/data/projects";
-import Link from "next/link";
 
 export default function ProjectsPage() {
 
     
     return (
         <div className="flex flex-col gap-10">
-            <h1 className="text-2xl">A complete list of all the projects I'm working on</h1>
+            <h1 className="text-2xl">A complete list of all the projects I am working on</h1>
             <Table>
                 <TableHeader>
                     <TableRow>
