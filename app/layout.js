@@ -7,7 +7,7 @@ const raleway = Raleway({ subsets: ["latin"], weight: ["400", "500", "600", "700
 
 export const metadata = {
   title: "Louis Nguyen",
-  description: "Louis Nguyen"
+  description: "Louis Nguyen's personal website."
 };
 
 export default function RootLayout({ children }) {
