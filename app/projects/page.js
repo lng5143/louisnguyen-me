@@ -15,13 +15,13 @@ export default function ProjectsPage() {
                         <TableCell>Description</TableCell>
                         <TableCell>Tech Stack</TableCell>
                         <TableCell>Status</TableCell>
-                        <TableCell>Revenue</TableCell>
+                        {/* <TableCell>Revenue</TableCell> */}
                     </TableRow>
                 </TableHeader>
                 <TableBody>
                     {PROJECTS.map((project) => (
                         <TableRow key={project.name}>
-                            <TableCell><a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a></TableCell>
+                            <TableCell><a href={project.url} target="_blank" rel="noopener noreferrer" className="underline">{project.name}</a></TableCell>
                             <TableCell>{project.description}</TableCell>
                             <TableCell>
                                 <div className="flex gap-1 flex-wrap">
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
                                     <Badge variant="outline">Unknown</Badge>
                                 )}
                             </TableCell>
-                            <TableCell>{project.revenue}</TableCell>
+                            {/* <TableCell>{project.revenue}</TableCell> */}
                         </TableRow>
                     ))}
                 </TableBody>

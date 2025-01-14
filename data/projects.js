@@ -8,11 +8,20 @@ const PROJECTS = [
         url: "https://nootropicslist.me"
     },
     {
-        name: "ImagineHub",
+        name: "ImagineBox",
         description: "Web client for image generation models.",
-        techStack: ["Next.js", "TailwindCSS", "Supabase", "Shadcn/UI"],
-        status: 2,
+        techStack: ["Next.js", "TailwindCSS", "Shadcn/UI", "Auth.js", "Coolify", "LemonSqueezy", "AWS"],
+        status: 1,
         revenue: "$0",
+        url: "https://imaginebox.me"
+    },
+    {
+        name: "VideoLlama",
+        description: "Create Narrated Videos In Minutes with AI",
+        techStack: ["Next.js", "TailwindCSS", "Shadcn/UI", "Auth.js", "Coolify", "LemonSqueezy", "AWS Lambda", "AWS S3", "ElevenLabs API", "Stability AI API"],
+        status: 1,
+        revenue: "$0",
+        url: "https://videollama.co"
     },
 ];
 
